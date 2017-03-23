@@ -30,3 +30,7 @@
 
 # build directory
 build/
+
+# documentation
+documentation/html
+documentation/latex

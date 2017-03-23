@@ -54,12 +54,14 @@ class Button
         //! virtual standart constructor
         virtual ~Button();
         
-        //! getter/setter for the sprite
+        //! getter for the sprite
         sf::Sprite GetbuttonSprite() const { return buttonSprite; }
+        //! setter for the sprite
         void SetbuttonTexture(const sf::Sprite& val) { buttonSprite = val; }
         
-        //! getter/setter for the action
+        //! getter for the action
         ResultType GetbuttonAction() const { return action; }
+        //! setter for the action
         void SetbuttonAction(const ResultType& val) { action = val; }
         
         //! check if button is isClicked

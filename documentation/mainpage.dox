@@ -1,0 +1,23 @@
+/**
+@mainpage 
+ 
+@section intro Introduction
+
+This document provides code documentation for the generic game classes using sfml 2.4.
+
+@subpage getting_started
+
+
+
+@page getting_started Getting Started
+
+@section compile Downloading and Compiling
+
+You can get the source code of the current Release version from the git-repository on github
+
+git@github.com/MartinWenge/generic-sfml-game.git
+
+Information on how to build and install the software can be found there, 
+or equivalently in the file Readme.md in the repository.  
+
+*/

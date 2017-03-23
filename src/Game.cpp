@@ -1,18 +1,20 @@
 #include "Game.h"
 
+/** @file Game.h
+ * @author Martin Wengenmayr
+ * @date 23.03.2017
+ * @brief implementation of generall game class
+ */
+
 // constructor with state and window
 Game::Game(GameState_t state, sf::RenderWindow& window):
       _gameState(state),
       _mainWindow(window)
-{
-    //empty
-}
+{}
 
 // default destructor
 Game::~Game()
-{
-    //empty
-}
+{}
 
 // start function called from main
 void Game::Start(void){

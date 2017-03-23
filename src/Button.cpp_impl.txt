@@ -1,0 +1,61 @@
+#include "Button.h"
+
+template <typename ResultType>
+Button<ResultType>::Button(ResultType action_,std::string pathToTexture_, float width_, float height_,float xPos_, float yPos_):
+    pathToTexture(pathToTexture_),
+    buttonSize(width_, height_),
+    buttonPosition(xPos_,yPos_),
+    isMouseSelected(false),
+    isClicked(false),
+    action(action_)
+{
+    //set button frame: no frame = mouse not on button, otherwise small frame
+    // button.setOutlineThickness(0); //0 is default
+
+    //load texture and cover it inside the button rectangle
+    if (!buttonTexture.loadFromFile(pathToTexture, sf::IntRect(xPos_,yPos_,width_,height_)))
+        std::cerr << "buttonTexture not found"<<std::endl;
+
+    //bind texture (on grafic card)
+    buttonSprite.setTexture(buttonTexture);
+}
+
+template <typename ResultType>
+Button<ResultType>::~Button()
+{
+    //dtor
+}
+
+template <typename ResultType>
+bool Button<ResultType>::checkClick(sf::Vector2i mousePos){
+    
+    if(button.getGlobalBounds().contains(mousePos.x, mousePos.y) && !isClicked){
+        isClicked = true;
+        return true;
+    }
+    
+}
+
+template <typename ResultType>
+void Button<ResultType>::checkMouseposition(sf::Vector2i mousePos){
+    bool wasSwitched(false);
+    // if mouse is in rectangle and not framed
+    if(button.getGlobalBounds().contains(mousePos.x, mousePos.y) && !isMouseSelected){
+        isMouseSelected = true;
+        wasSwitched = true;
+    }// else if mouse is out of rectangle and still framed
+    else if(!button.getGlobalBounds().contains(mousePos.x, mousePos.y) && isMouseSelected){
+        isMouseSelected = false;
+        wasSwitched = true;
+    }
+    
+    // now change texture if neccessary
+    if(wasSwitched){
+        if(isMouseSelected)
+            button.setOutlineThickness(10);
+        else
+            button.setOutlineThickness(0);
+    }
+    
+}
+    

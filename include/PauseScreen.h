@@ -2,10 +2,17 @@
 #define PAUSESCREEN_H
 
 #include "Button.h"
+#include "windowSize.h"
+
 #include <list>
 #include <iostream>
-// define screen Size
-#include "windowSize.h"
+
+/** @file PauseScreen.h
+ * @author Martin Wengenmayr
+ * @date 23.03.2017
+ * @brief definition of pause class
+ */
+
 
 class PauseScreen
 {

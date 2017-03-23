@@ -1,5 +1,11 @@
 #include "MainMenu.h"
 
+/** @file MainMenu.cpp
+ * @author Martin Wengenmayr
+ * @date 23.03.2017
+ * @brief implementation of MainMenu class
+ */
+
 MainMenu::MainMenu(){}
 
 MainMenu::~MainMenu(){}

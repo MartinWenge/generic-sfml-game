@@ -1,5 +1,11 @@
 #include "PauseScreen.h"
 
+/** @file PauseScreen.cpp
+ * @author Martin Wengenmayr
+ * @date 23.03.2017
+ * @brief implementations of pause class
+ */
+
 PauseScreen::PauseScreen(){}
 
 PauseScreen::~PauseScreen(){}

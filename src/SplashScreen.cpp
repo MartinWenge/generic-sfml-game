@@ -4,6 +4,12 @@
 #include "SFML/Window.hpp"
 #include "SFML/Graphics.hpp"
 
+/** @file SplashScreen.cpp
+ * @author Martin Wengenmayr
+ * @date 23.03.2017
+ * @brief implementation of SplashScreen class
+ */
+
 SplashScreen::SplashScreen()
 {
     //ctor

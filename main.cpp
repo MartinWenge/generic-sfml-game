@@ -1,6 +1,7 @@
 
 #include "GenericFullHeader.h"
 
+//! main function running sfml window and game class
 int main()
 {
     std::cout<<"starting Game\n";

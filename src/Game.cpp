@@ -1,6 +1,6 @@
 #include "Game.h"
 
-/** @file Game.h
+/** @file Game.cpp
  * @author Martin Wengenmayr
  * @date 23.03.2017
  * @brief implementation of generall game class

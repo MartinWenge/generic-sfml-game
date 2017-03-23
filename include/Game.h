@@ -7,7 +7,7 @@
 /** @file Game.h
  * @author Martin Wengenmayr
  * @date 23.03.2017
- * @brief definition of generall game class
+ * @brief definition of generall Game class
  */
 
 //! possible game states

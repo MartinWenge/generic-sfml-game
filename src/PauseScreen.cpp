@@ -3,7 +3,7 @@
 /** @file PauseScreen.cpp
  * @author Martin Wengenmayr
  * @date 23.03.2017
- * @brief implementations of pause class
+ * @brief implementations of PauseScreen class
  */
 
 PauseScreen::PauseScreen(){}

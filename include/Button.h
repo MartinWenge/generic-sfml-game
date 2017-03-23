@@ -9,7 +9,7 @@
 /** @file Button.h
  * @author Martin Wengenmayr
  * @date 23.03.2017
- * @brief definition of simple sfml-button class
+ * @brief definition of simple sfml- Button class
  */
 
 /** @brief generall button class with arbitray action return object

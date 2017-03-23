@@ -10,7 +10,7 @@
 /** @file PauseScreen.h
  * @author Martin Wengenmayr
  * @date 23.03.2017
- * @brief definition of pause class
+ * @brief definition of PauseScreen class
  */
 
 

@@ -3,7 +3,7 @@
 /** @file Game.cpp
  * @author Martin Wengenmayr
  * @date 23.03.2017
- * @brief implementation of generall game class
+ * @brief implementation of generall Game class
  */
 
 // constructor with state and window
